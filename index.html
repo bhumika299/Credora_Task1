@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Circular Stopwatch</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background">
+    <div class="stopwatch-box">
+      <h1>Stopwatch</h1>
+      <div class="circle-container">
+        <svg class="progress-ring" width="200" height="200">
+          <circle
+            class="progress-ring__circle"
+            stroke="#007BFF"
+            stroke-width="10"
+            fill="transparent"
+            r="90"
+            cx="100"
+            cy="100"
+          />
+        </svg>
+        <div class="time-display" id="display">00:00:00.00</div>
+      </div>
+      <div class="buttons">
+        <button id="startBtn">Start</button>
+        <button id="stopBtn">Stop</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

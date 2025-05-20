@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  .background {
+    background-image: url('images/pexels-pixabay-161172.jpg'); /* You can change this URL */
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .stopwatch-box {
+    background: rgba(47, 44, 45, 0.477);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    width: 300px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #ebe3e3;
+  }
+  
+  .circle-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 30px;
+  }
+  
+  .progress-ring__circle {
+    transition: stroke-dashoffset 0.1s;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+  }
+  
+  .time-display {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f4ecec;
+    box-sizing: content-box;
+  }
+  
+  .buttons button {
+    padding: 10px 13px;
+    margin: 0 5px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    font-size: 1em;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .buttons button:hover {
+    background: #0056b3;
+  }
+  
